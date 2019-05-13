@@ -1,0 +1,15 @@
+<h2>Custom Pipe Example</h2>
+
+<h4>List of Persons without pipe:</h4>
+<div>
+  <p *ngFor="let person of personList">
+    {{person.name}}
+  </p>
+</div>
+
+<h4>List of Persons with pipe (person.name | customPipe : person.gender):</h4>
+<div>
+  <p *ngFor="let person of personList">
+    {{person.name | customPipe : person.gender}}
+  </p>
+</div>
